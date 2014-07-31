@@ -274,7 +274,7 @@ $ openssl req -nodes -newkey rsa:4096 -keyout relay.pem -x509 -days 365 -out rel
               </td>
               <td class="prefix"><a ng-click="addMention(bufferline.prefix)"><span ng-repeat="part in ::bufferline.prefix" ng-class="::part.classes" ng-bind="::part.text"></span></a></td><!--
            --><td class="message"><!--
-             --><div ng-repeat="metadata in ::bufferline.metadata" plugin data="::metadata"></div><!--
+             --><div ng-repeat="metadata in ::bufferline.metadata" plugin data="::metadata" class="plugin"></div><!--
              --><span ng-repeat="part in ::bufferline.content" class="text" ng-class="::part.classes" ng-bind-html="::part.text | linky:'_blank' | DOMfilter:'irclinky' | DOMfilter:'emojify':enableJSEmoji | DOMfilter:'inlinecolour' "></span>
               </td>
             </tr>
