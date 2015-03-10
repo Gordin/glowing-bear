@@ -91,7 +91,8 @@ describe('filter', function() {
                 'http://foo.bar/baz.php?img=trololo.png&dummy=yes',
                 'https://tro.lo.lo/images/rick.png?size=123x45',
                 'https://pbs.twimg.com/media/B66rbCuIMAAxiFF.jpg:large',
-                'https://pbs.twimg.com/media/B6OZuCYCEAEV8SA.jpg:medium'
+                'https://pbs.twimg.com/media/B6OZuCYCEAEV8SA.jpg:medium',
+                'http://giphy.com/gifs/chris-pratt-nebula-guardians-of-the-galaxy-MTN4uwitLC1GM'
             ],
             'image',
             plugins);

@@ -264,6 +264,11 @@ plugins.factory('userPlugins', function() {
             }
 
             return '<a target="_blank" href="'+url+'"><img class="embed" src="' + url + '"></a>';
+        } else if (url.match("^http://giphy.com/gifs/")) {
+            var tmp = url.split("-");
+            var id = tmp[tmp.length - 1];
+            url = "http://media.giphy.com/media/" + id + "/giphy.gif"
+            return '<a target="_blank" href="'+url+'"><img class="embed" src="' + url + '"></a>';
         }
     });
 
